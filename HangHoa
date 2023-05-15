@@ -1,0 +1,47 @@
+package bai2;
+//import java.util.ArrayList;
+//import java.util.Date;
+//import java.util.Scanner;
+
+public abstract class HangHoa {
+    private String maHang;
+    private String tenHang;
+    private int soLuong;
+    private double donGia;
+
+    public HangHoa(String maHang, String tenHang, int soLuong, double donGia) {
+        this.maHang = maHang;
+        this.tenHang = tenHang;
+        this.soLuong = soLuong;
+        this.donGia = donGia;
+    }
+
+   public String getmaHang() {
+        return maHang;
+    }
+    public void setmaHang(String mahang) {
+        this.maHang=mahang;
+    }
+    public String gettenHang() {
+        return tenHang;
+    }
+    public void settenHang( String tenhang) {
+        this.tenHang=tenhang;
+    }
+    public int gesoLuong() {
+        return soLuong;
+    }
+    public void setsoLuong(int soLuong) {
+        this.soLuong=soLuong;
+    }
+    public double donGia() {
+        return donGia;
+    }
+    public void setdonGia(double donGia) {
+        this.donGia=donGia;
+    }
+
+    public abstract double calculateVAT();
+
+    public abstract String evaluateWholesale();
+}
